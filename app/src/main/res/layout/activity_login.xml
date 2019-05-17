@@ -6,37 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 <RelativeLayout
+
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:rotation="180"
+        android:foreground="@drawable/backgtound_png"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
     <LinearLayout
 
         android:layout_marginTop="200dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
         <EditText
+            android:id="@+id/mailEt"
             android:hint="Kullanıcı Adı"
             android:layout_gravity="center"
             android:layout_width="250dp"
             android:layout_height="wrap_content" />
         <EditText
+            android:id="@+id/passwordEt"
             android:hint="Şifre"
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
             android:layout_width="250dp"
             android:layout_height="wrap_content" />
         <Button
+            android:id="@+id/loginButton"
             android:text="Giriş Yap"
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
             android:layout_width="150dp"
             android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/registerButton"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="Hala üye değilseniz tıklayın"
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
     </LinearLayout>
-<LinearLayout
-    android:rotation="180"
-    android:background="@drawable/backgtound_png"
-    android:layout_alignParentBottom="true"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"></LinearLayout>
+
 </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
