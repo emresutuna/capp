@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:title="Konuş"
+        />
+
+    <item
+        android:title="Kategoriler"
+        android:id="@+id/navigation_category"
+
+        />
+
+    <item
+        android:id="@+id/navigation_favorite"
+        android:title="Profil"
+        />
+
+</menu>
