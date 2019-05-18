@@ -3,26 +3,27 @@ package com.example.caatapp.Models;
 public class User {
     String id;
     String username;
-    int age;
-    String loginStatus;
-    String isVip;
-    String profileDescription;
+    int loginStatus;
+    boolean isVip;
     String photo;
     int chatAmount;
+    int gender;
     int greatFeedback;
     int badFeedback;
     int selectedCategory;
 
+    public User(){
 
-    public User(String id, String username, int age, String loginStatus, String isVip, String profileDescription, String photo, int chatAmount, int greatFeedback, int badFeedback, int selectedCategory) {
+    }
+
+    public User(String id, String username, int loginStatus, boolean isVip, String photo, int chatAmount, int gender, int greatFeedback, int badFeedback, int selectedCategory) {
         this.id = id;
         this.username = username;
-        this.age = age;
         this.loginStatus = loginStatus;
         this.isVip = isVip;
-        this.profileDescription = profileDescription;
         this.photo = photo;
         this.chatAmount = chatAmount;
+        this.gender = gender;
         this.greatFeedback = greatFeedback;
         this.badFeedback = badFeedback;
         this.selectedCategory = selectedCategory;
@@ -44,36 +45,20 @@ public class User {
         this.username = username;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getLoginStatus() {
+    public int getLoginStatus() {
         return loginStatus;
     }
 
-    public void setLoginStatus(String loginStatus) {
+    public void setLoginStatus(int loginStatus) {
         this.loginStatus = loginStatus;
     }
 
-    public String getIsVip() {
+    public boolean isVip() {
         return isVip;
     }
 
-    public void setIsVip(String isVip) {
-        this.isVip = isVip;
-    }
-
-    public String getProfileDescription() {
-        return profileDescription;
-    }
-
-    public void setProfileDescription(String profileDescription) {
-        this.profileDescription = profileDescription;
+    public void setVip(boolean vip) {
+        isVip = vip;
     }
 
     public String getPhoto() {
@@ -114,5 +99,13 @@ public class User {
 
     public void setSelectedCategory(int selectedCategory) {
         this.selectedCategory = selectedCategory;
+    }
+
+    public int getGender() {
+        return gender;
+    }
+
+    public void setGender(int gender) {
+        this.gender = gender;
     }
 }

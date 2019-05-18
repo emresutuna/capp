@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "227834008973",
+    "firebase_url": "https://caat-7bbf9.firebaseio.com",
+    "project_id": "caat-7bbf9",
+    "storage_bucket": "caat-7bbf9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227834008973:android:5fa08b739ee67ed7",
+        "android_client_info": {
+          "package_name": "com.example.caatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227834008973-n3qdhnhlnu22fj41jadivn33jkq446vk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.caatapp",
+            "certificate_hash": "a04ba81e42dbe1d01b6ca25ae8dcbd5c85331dbf"
+          }
+        },
+        {
+          "client_id": "227834008973-slnd6vac8phd2b6cvl62ns9lef09sn8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHDZdw6aZKS72F3zD32bv7MzYNlQ8lqOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227834008973-slnd6vac8phd2b6cvl62ns9lef09sn8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

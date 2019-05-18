@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     android:background="#ff5252"
     tools:context=".RegisterActivity">
+    <RelativeLayout
+        android:id="@+id/loadingRegister"
+        android:visibility="gone"
+        android:background="#8fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ProgressBar
+    android:layout_centerInParent="true"
+
+    android:layout_width="50dp"
+    android:layout_height="50dp" />
+    </RelativeLayout>
 
     <TextView
 
@@ -91,7 +103,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="150dp"
         android:background="@drawable/shape_splash_buttons"
         android:text="Devam Et"
         android:textAllCaps="false"
@@ -100,6 +112,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/genderStep"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_steper1"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/registerStep"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/shape_steper"></LinearLayout>
+    </LinearLayout>
     <RelativeLayout
         android:id="@+id/registerEmail"
         android:visibility="gone"
@@ -141,6 +184,7 @@
 
 
             <Button
+                android:id="@+id/btnReg"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:background="@drawable/shape_splash_buttons"
